@@ -4,13 +4,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        //input number
+        bool continueProgram = true;
+
+        while (continueProgram){
+            //input number
         Console.Write("input number : ");
         int numRows = int.Parse(Console.ReadLine());
 
         if (numRows < 0)
         {
             Console.WriteLine("Invalid Pascal's triangle row number.");
+            continue;
         }
         else
         {
@@ -22,6 +26,9 @@ class Program
                 }
                 Console.WriteLine();
             }
+
+            continueProgram = false;
+        }
         }
     }
 
