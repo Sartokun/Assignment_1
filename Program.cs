@@ -5,9 +5,9 @@ class Program
     static void Main(string[] args)
     {
         //input number
-        Console.Write("Please enter the layer of Pascal's triangle : ");
+        Console.Write("input number : ");
         int numRows = int.Parse(Console.ReadLine());
-        
+
         if (numRows < 0)
         {
             Console.WriteLine("Invalid Pascal's triangle row number.");
