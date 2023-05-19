@@ -4,9 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("กรุณากรอกชั้นของสามเหลี่ยมปาสคาล: ");
+        //input number
+        Console.Write("Please enter the layer of Pascal's triangle : ");
         int numRows = int.Parse(Console.ReadLine());
-
+        
         if (numRows < 0)
         {
             Console.WriteLine("Invalid Pascal's triangle row number.");
